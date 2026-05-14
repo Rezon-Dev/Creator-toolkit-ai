@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creator Toolkit AI | Captions, Hashtags & Assamese Creator Hub</title>
+  <meta name="description" content="Generate captions, hashtags, bios, reel hooks, and Assamese creator content with Creator Toolkit AI." />
+  <meta name="keywords" content="AI caption generator, Assamese captions, hashtag generator, creator toolkit, Instagram captions, WhatsApp status" />
+  <meta name="author" content="Rezon Haque" />
+  <meta property="og:title" content="Creator Toolkit AI" />
+  <meta property="og:description" content="AI-powered creator tools with Assamese Creator Hub." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0B0F1A" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="Creator Toolkit AI Home">
+      <img src="assets/icon.svg" alt="" />
+      <span>Creator Toolkit AI</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#tools">Tools</a>
+      <a href="#assamese">Assamese</a>
+      <a href="#saved">Saved</a>
+    </nav>
+    <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark mode">☾</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="badge">Made for creators, students & Assamese audience</p>
+        <h1>Generate captions, hooks, hashtags & Assamese content in seconds.</h1>
+        <p class="subtext">
+          A premium creator toolkit for Instagram, YouTube, Facebook, WhatsApp, LinkedIn and local Assamese content creators.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#generator">Start Creating</a>
+          <a class="secondary-btn" href="#assamese">Assamese Hub</a>
+        </div>
+        <div class="stats">
+          <div><strong>8+</strong><span>Platforms</span></div>
+          <div><strong>4</strong><span>Languages</span></div>
+          <div><strong>1 Tap</strong><span>Copy</span></div>
+        </div>
+      </div>
+
+      <div class="phone-card" aria-label="App preview">
+        <div class="phone-top"></div>
+        <div class="preview-card">
+          <span class="mini-label">Topic</span>
+          <p>Rainy evening in Assam</p>
+        </div>
+        <div class="preview-card accent">
+          <span class="mini-label">AI Caption</span>
+          <p>Some evenings don’t need filters, only feelings. 🌧️✨</p>
+        </div>
+        <div class="chips">
+          <span>#AssamVibes</span>
+          <span>#Aesthetic</span>
+          <span>#CreatorLife</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="section-head">
+        <p class="badge">Creator tools</p>
+        <h2>Everything you need before posting.</h2>
+      </div>
+      <div class="tool-grid">
+        <article class="tool-card">✨ <h3>Caption Generator</h3><p>Platform-ready captions for every mood.</p></article>
+        <article class="tool-card"># <h3>Hashtag Generator</h3><p>Smart hashtags for reach and niche targeting.</p></article>
+        <article class="tool-card">🎬 <h3>Reel Hooks</h3><p>Short hooks for Shorts, Reels and TikTok.</p></article>
+        <article class="tool-card">👤 <h3>Bio Generator</h3><p>Clean bios for creators, students and brands.</p></article>
+        <article class="tool-card">💬 <h3>WhatsApp Status</h3><p>Short aesthetic lines for daily posting.</p></article>
+        <article class="tool-card">🌺 <h3>Assamese Hub</h3><p>Captions, quotes, Bihu lines and local content.</p></article>
+      </div>
+    </section>
+
+    <section id="generator" class="section generator-layout">
+      <div class="panel input-panel">
+        <div class="section-head compact">
+          <p class="badge">Generate</p>
+          <h2>Caption Studio</h2>
+        </div>
+
+        <label>Topic / Post Idea
+          <textarea id="topicInput" placeholder="Example: rainy evening, school memories, new product launch..."></textarea>
+        </label>
+
+        <div class="form-row">
+          <label>Platform
+            <select id="platformSelect">
+              <option>Instagram</option>
+              <option>YouTube</option>
+              <option>Facebook</option>
+              <option>WhatsApp</option>
+              <option>LinkedIn</option>
+              <option>Pinterest</option>
+              <option>X/Twitter</option>
+            </select>
+          </label>
+
+          <label>Mood
+            <select id="moodSelect">
+              <option>Aesthetic</option>
+              <option>Funny</option>
+              <option>Emotional</option>
+              <option>Professional</option>
+              <option>Romantic</option>
+              <option>Motivational</option>
+              <option>Viral</option>
+              <option>Assamese</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>Language
+            <select id="languageSelect">
+              <option>English</option>
+              <option>Hindi</option>
+              <option>Hinglish</option>
+              <option>Assamese</option>
+            </select>
+          </label>
+
+          <label>Length
+            <select id="lengthSelect">
+              <option>Short</option>
+              <option>Medium</option>
+              <option>Long</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="button-row">
+          <button id="generateBtn" class="primary-btn" type="button">Generate</button>
+          <button id="clearBtn" class="secondary-btn" type="button">Clear</button>
+        </div>
+      </div>
+
+      <div class="panel output-panel">
+        <div class="output-head">
+          <div>
+            <p class="badge">Results</p>
+            <h2>Your content</h2>
+          </div>
+          <button id="saveBtn" class="icon-btn" title="Save result">♡</button>
+        </div>
+        <div id="outputBox" class="output-box empty">
+          Enter a topic and generate captions.
+        </div>
+        <div class="button-row">
+          <button id="copyCaptionBtn" class="secondary-btn" type="button">Copy Caption</button>
+          <button id="copyTagsBtn" class="secondary-btn" type="button">Copy Hashtags</button>
+          <button id="copyAllBtn" class="primary-btn" type="button">Copy All</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="assamese" class="section">
+      <div class="section-head">
+        <p class="badge">Unique niche</p>
+        <h2>Assamese Creator Hub</h2>
+        <p class="subtext">Local-language content ideas for Assamese creators, pages and status updates.</p>
+      </div>
+      <div class="assamese-grid" id="assameseGrid"></div>
+    </section>
+
+    <section id="saved" class="section">
+      <div class="section-head">
+        <p class="badge">Your library</p>
+        <h2>Saved captions & history</h2>
+      </div>
+      <div class="panel">
+        <div id="savedList" class="saved-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <p>Built by <strong>Rezon Haque</strong> · Support: rezonhaque123@gmail.com</p>
+    <p>Version 1.0 · Creator Toolkit AI</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "Creator Toolkit AI",
+  "short_name": "Creator AI",
+  "description": "AI creator tools with Assamese Creator Hub.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0B0F1A",
+  "theme_color": "#7F5AF0",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
